@@ -7,9 +7,11 @@ class Person
   # 读和写
   attr_accessor :age
 
+  # 类属性
   @@counter=0
 
   def initialize(name, age)
+    # 实例属性
     @age = age
     @name = name
   end
