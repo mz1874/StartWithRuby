@@ -25,3 +25,4 @@ a.show_info
 puts "*" * 100
 dog = Dog.new("哺乳动物", "张三")
 dog.show_info
+puts Dog.superclass
