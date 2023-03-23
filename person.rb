@@ -1,4 +1,8 @@
+$LOAD_PATH << "."
 class Person
+
+  #类方法
+  require 'time_utils'
 
   # 类似 getter 和 setter
   attr_reader :name
@@ -28,6 +32,7 @@ class Person
   def self.get_counter
     puts @@counter
     @@counter
+    TimeUtils.show_current_time
   end
 end
 
