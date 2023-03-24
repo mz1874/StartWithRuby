@@ -1,4 +1,12 @@
+$LOAD_PATH << "."
+require 'time_utils'
 class Person
+
+  # 注册为
+  # include TimeUtils
+
+  #注册为类方法
+  extend TimeUtils
 
   # 类似 getter 和 setter
   attr_reader :name
@@ -28,6 +36,7 @@ class Person
   def self.get_counter
     puts @@counter
     @@counter
+    #适用于 include的方法和 require的方法 引入 include 方法 引入为实例方法  extend 引入为类方法
   end
 end
 
@@ -35,4 +44,5 @@ zhangSan = Person.new("zhangsan", 19)
 
 puts zhangSan.get_name
 zhangSan.to_string
+zhangSan
 Person.get_counter
