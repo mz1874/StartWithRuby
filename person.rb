@@ -41,7 +41,6 @@ class Person
 end
 
 zhangSan = Person.new("zhangsan", 19)
-
 puts zhangSan.get_name
 zhangSan.to_string
 zhangSan
