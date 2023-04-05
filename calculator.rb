@@ -24,4 +24,8 @@ else
   puts "No"
 end
 
+a = "111ss"
+b = 11
+a = a+b
+
 
