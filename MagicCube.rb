@@ -6,11 +6,14 @@
 #   * * *
 #   * * *   1.
 
-a = Array.new(6) {|x| Array.new(9)}
+a = Array.new(6) {|x|
+  puts x.class
+  Array.new(9)
+}
 
 def initArr(arr)
   for index in arr
-
   end
 end
 initArr(a)
+

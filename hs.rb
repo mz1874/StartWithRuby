@@ -9,11 +9,6 @@ def findTheBiggestNumber(a, b)
 end
 
 
-def hi(name)
-  yield(name)
-end
-
-
 
 File.open("1.txt", "r") do |o|
   o.readline
